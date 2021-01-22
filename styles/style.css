@@ -1,8 +1,160 @@
+/*Universal resets*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+a {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+h2 {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* Navbar styles */
+
+nav {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > img {
+  padding: 20px;
+  height: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+h2,
+h3 {
+  margin: 10px auto;
+  padding: 20px auto;
+}
+
+/* Header styles */
+
+header {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("/images/landing.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  margin: 10px;
+  padding: 30px;
+  font-size: 3.5em;
+}
+
+header article {
+  font-size: 1.3em;
+  padding: 10px 30vw;
+}
+
+/* Whats on styles */
+
+.whats-on {
+  text-align: center;
+  padding: 50px;
+}
+
+.whats-on h2 {
+  text-decoration-color: #00b172;
+}
+
+.whats-on h3 {
+  color: #00b172;
+}
+
+.whats-on > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.whats-on > div > article {
+  width: 30%;
+  max-width: 200px;
+  padding: 25px;
+}
+
+.whats-on > div > article > img {
+  max-width: 80px;
+}
+
+/* Its as yeezy styles */
+
+.its-as-yeezy {
+  background-color: #00b172;
+  color: #fff;
+  text-decoration-color: #fff;
+  padding: 50px 100px;
+  max-height: 100vh;
+  position: relative;
+}
+
+.its-as-yeezy > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.its-as-yeezy > div > div > article {
+  width: 60%;
+  padding: 10px 0px;
+}
+
+.spotify-screenshot {
+  max-height: 400px;
+  max-width: 30%;
+}
+
+.white-logo {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*
 Colors:
 
 Text: 1A1A1A
 Green: #00B172
 White: #FFF
+
+Iteration 4: The green section
+It looks like we have 2 main sections, a containing element with the text flowing from top to bottom, and the image of the Spotify player on the right.
+Position the Spotify logo absolutely according to the green div.
 
 */
